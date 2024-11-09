@@ -1,0 +1,72 @@
+.main-section {
+  // @apply  h-[100vh] w-[100%] bg-Black;
+  .one-section {
+    @apply flex justify-between items-center bg-Black text-white py-3 px-5;
+
+    .logo {
+      @apply h-8 w-auto;
+    }
+    .Home-design {
+      @apply bg-A-Black h-12 w-12 rounded-full flex justify-center items-center;
+      .Home-icon {
+        @apply h-7 w-10;
+      }
+    }
+    .SearchSection {
+      @apply flex items-center gap-5 hidden md:flex;
+
+      .search-section {
+        @apply flex items-center bg-A-Black text-A-White outline-none rounded-full transition-transform hover:bg-B-Black duration-300 ease-in-out;
+
+        .search {
+          @apply flex pl-2;
+        }
+
+        @layer components {
+          .search-btn {
+            @apply bg-A-Black text-A-White h-10 w-[400px] rounded-full border-none outline-none pl-2 font-bold transition-transform hover:bg-B-Black duration-300 ease-in-out;
+          }
+        }
+        .browser {
+          @apply flex justify-between items-center cursor-pointer; // Align items and set cursor to pointer
+
+          svg {
+            @apply h-8 w-8 transition-transform duration-200 ease-in-out pr-2 text-white; // Set size and transition
+
+            // &:hover {
+            //     @apply scale-110; // Slightly enlarge on hover
+            //     fill: #ffffff;
+            // }
+          }
+
+          // Optional: Add a separator if needed (like a vertical line)
+          // &::before {
+          //     content: '|';
+          //     @apply mx-2 text-A-White; // Adjust color as needed
+          //     font-size: 1.5rem; // Adjust size as needed
+          // }
+        }
+      }
+    }
+
+    // Login-Section
+    .user-section {
+      @apply flex justify-evenly items-center gap-5;
+
+      .sign-up-section {
+        @apply bg-Black text-white;
+
+        .sign-btn {
+          @apply text-balance font-semibold text-gray-400 hover:scale-105 transition-transform duration-300 ease-linear hover:text-White;
+        }
+      }
+      @layer components {
+        .login-in-section {
+          .login-btn {
+            @apply text-[17px]  text-Black bg-White py-2 px-5 rounded-full font-bold hover:scale-105 transition-transform duration-300 ease-linear;
+          }
+        }
+      }
+    }
+  }
+}

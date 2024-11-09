@@ -1,0 +1,11 @@
+.main-contianer {
+  @apply flex justify-center items-center flex-col h-[100vh] w-[100vw] bg-Green gap-20;
+
+  .container-img {
+    @apply h-[20vh];
+  }
+
+  .button-container {
+    @apply py-4 px-20 bg-Black text-B-White border-none text-2xl cursor-pointer;
+  }
+}
