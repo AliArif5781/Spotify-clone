@@ -1,16 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+// Import Sass files before other rules
+@use "./navbar.scss" as *;
+@use "./firstPage.scss" as *;
+@use "./leftSection.scss" as *;
+@use "./customScroller.scss" as *;
 
+// Tailwind directives should come after `@use`
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import "./navbar.scss";
-@import "./firstPage.scss";
-@import "./leftSection.scss";
-@import "./customScroller.scss";
-/*
- As of Dart Sass version 1.32.0, the use of @import has been deprecated in favor of @use and @forward. Here’s how you can update your code to fix this issue:
-
-Steps to Update
-Convert @import to @use: In main.scss, replace @import statements with @use like this:
-*/
