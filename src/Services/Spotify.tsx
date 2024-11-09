@@ -1,6 +1,7 @@
-const authEndpoint = "https://accounts.spotify.com/authorize";
-const redirect_uri = "http://localhost:5173/";
-const client_id = "f588ae8ba0e84925b981ae555a39b2bb";
+const env = import.meta.env;
+const authEndpoint = env.VITE_AUTHENDPOINT;
+const redirect_uri = env.VITE_REDIRECT_URI;
+const client_id = env.VITE_CLIENT_ID;
 const scope = [
   // in order to perform anything inside sotify app first have scope then only can do that
   "user-read-email",
