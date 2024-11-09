@@ -5,6 +5,7 @@ import "../src/assets/sass/main.scss";
 import { Provider } from "react-redux";
 import { store } from "./app/feature/store.tsx";
 import "./components/CustomScrollBar.css";
+import "./index.css";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Provider store={store}>
