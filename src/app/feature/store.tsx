@@ -13,8 +13,8 @@ export const store = configureStore({
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
-      serializableCheck: false, // Disable serializable state check
-      immutableCheck: false, // Disable immutable state check
+      // serializableCheck: false, // Disable serializable state check
+      // immutableCheck: false, // Disable immutable state check
     }).concat(spotifyApi.middleware),
 });
 
